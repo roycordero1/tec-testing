@@ -5,7 +5,7 @@ commands:
     cmd: |
       BRANCH=$1
       MESSAGE=$2
-      REPO="git@github.com:wi-tec/tec-testing.git"
+      REPO="git@github.com:roycordero1/tec-testing.git"
       CLONEFOLDER=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
       git clone --branch $BRANCH $REPO $CLONEFOLDER || git clone $REPO $CLONEFOLDER
       cd $CLONEFOLDER
